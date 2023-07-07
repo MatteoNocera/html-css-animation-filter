@@ -110,13 +110,13 @@
 }
 
 .ex-10-icon {
-    animation-name: example;
+    animation-name: round-simple;
     animation-duration: 1s;
-    animation-iteration-count: infinite;
     animation-timing-function: linear;
+    animation-iteration-count: infinite;
 }
 
-@keyframes example {
+@keyframes round-simple {
     
     0% {
         transform: rotate(0deg);
@@ -145,6 +145,38 @@
 .ex-11-icon {
     font-size: 60px;
 }
+
+.ex-11-icon:hover {
+    animation-name: round-reverse;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+}
+
+@keyframes round-reverse {
+    0% {
+        transform: rotate(0deg);
+    }
+    
+    
+    25% {
+        transform: rotate(90deg);
+    }
+
+    50% {
+        transform: rotate(180deg);
+    }
+    
+    
+    75% {
+        transform: rotate(270deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+    
+}
+
 .ex-12-button, .ex-13-button {
     position: relative;
     display: block;
